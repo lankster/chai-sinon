@@ -11,5 +11,5 @@ global.swallow = function (thrower) {
     } catch (e) { }
 };
 
-var sinonChai = require("../lib/sinon-chai");
+var sinonChai = require("../lib/chai-sinon");
 chai.use(sinonChai);
