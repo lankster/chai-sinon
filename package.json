@@ -1,5 +1,5 @@
 {
-  "name": "sinon-chai",
+  "name": "chai-sinon",
   "description": "Extends Chai with assertions for the Sinon.JS mocking framework.",
   "keywords": [
     "chai",
@@ -13,11 +13,14 @@
     "stubs",
     "mocks"
   ],
-  "version": "2.8.0",
-  "author": "Domenic Denicola <d@domenic.me> (https://domenic.me/)",
+  "version": "2.8.1",
+  "contributors": [
+    "Michael McDermott <michael@mgmcdermott.com> (http://mgmcdermott.com/)",
+    "Domenic Denicola <d@domenic.me> (https://domenic.me/)"
+  ],
   "license": "(BSD-2-Clause OR WTFPL)",
-  "repository": "domenic/sinon-chai",
-  "main": "./lib/sinon-chai.js",
+  "repository": "mgmcdermott/chai-sinon",
+  "main": "./lib/chai-sinon.js",
   "files": [
     "lib"
   ],
@@ -27,18 +30,18 @@
     "test-chai-2-3-0": "npm install chai@2.3.0 && mocha",
     "test-chai-3-0-0": "npm install chai@3.0.0 && mocha",
     "lint": "jshint ./lib",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha && opener ./coverage/lcov-report/lib/sinon-chai.js.html"
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha && opener ./coverage/lcov-report/lib/chai-sinon.js.html"
   },
   "peerDependencies": {
     "chai": ">=1.9.2 <4",
-    "sinon": ">=1.4.0 <2"
+    "sinon": ">=1.4.0 || ^2.0.0-pre"
   },
   "devDependencies": {
     "chai": "^3.0.0",
-    "coffee-script": "~1.8.0",
-    "istanbul": "~0.3.2",
+    "coffee-script": "^1.11.1",
+    "istanbul": "^1.1.0-alpha.1",
     "jshint": "^2.5.6",
-    "mocha": "^1.21.4",
+    "mocha": "^3.2.0",
     "opener": "^1.4.0",
     "sinon": "^1.10.3"
   }
