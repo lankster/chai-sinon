@@ -1,6 +1,10 @@
 # Sinon.JS Assertions for Chai
 
-**Sinon–Chai** provides a set of custom assertions for using the [Sinon.JS][] spy, stub, and mocking framework with the
+> #### How is this different from [Sinon-Chai](https://github.com/domenic/sinon-chai)?
+> This project is a fork of domenic's [sinon-chai](https://github.com/domenic/sinon-chai) repository. That repository has not been updated in quite some time (~2 years).
+Since then, Sinon has released version 2.0 which this version does and will continue to support. In addition, there are some outstanding issues on the sinon-chai repository that I would like to address.
+
+**Chai-Sinon** provides a set of custom assertions for using the [Sinon.JS][] spy, stub, and mocking framework with the
 [Chai][] assertion library. You get all the benefits of Chai with all the powerful tools of Sinon.JS.
 
 Instead of using Sinon.JS's assertions:
@@ -25,14 +29,14 @@ expect(mySpy).to.have.been.calledWith("foo");
 
 ## Assertions
 
-All of your favorite Sinon.JS assertions made their way into Sinon–Chai. We show the `should` syntax here; the `expect`
+All of your favorite Sinon.JS assertions made their way into Chai-Sinon. We show the `should` syntax here; the `expect`
 equivalent is also available.
 
 <table>
     <thead>
         <tr>
             <th>Sinon.JS property/method</th>
-            <th>Sinon–Chai assertion</th>
+            <th>Chai-Sinon assertion</th>
         </tr>
     </thead>
     <tbody>
@@ -204,12 +208,12 @@ chai.use(sinonChai);
 ```
 
 You can of course put this code in a common test fixture file; for an example using [Mocha][], see
-[the Sinon–Chai tests themselves][fixturedemo].
+[the Chai-Sinon tests themselves][fixturedemo].
 
 ### AMD
 
-Sinon–Chai supports being used as an [AMD][] module, registering itself anonymously (just like Chai). So, assuming you
-have configured your loader to map the Chai and Sinon–Chai files to the respective module IDs `"chai"` and
+Chai-Sinon supports being used as an [AMD][] module, registering itself anonymously (just like Chai). So, assuming you
+have configured your loader to map the Chai and Chai-Sinon files to the respective module IDs `"chai"` and
 `"sinon-chai"`, you can use them as follows:
 
 ```javascript
@@ -223,7 +227,7 @@ define(function (require, exports, module) {
 
 ### `<script>` tag
 
-If you include Sinon–Chai directly with a `<script>` tag, after the one for Chai itself, then it will automatically plug
+If you include Chai-Sinon directly with a `<script>` tag, after the one for Chai itself, then it will automatically plug
 in to Chai and be ready for use. Note that you'll want to get the latest browser build of Sinon.JS as well:
 
 ```html
@@ -234,7 +238,7 @@ in to Chai and be ready for use. Note that you'll want to get the latest browser
 
 ### Ruby on Rails
 
-Thanks to [Cymen Vig][], there's now [a Ruby gem][] of Sinon–Chai that integrates it with the Rails asset pipeline!
+Thanks to [Cymen Vig][], there's now [a Ruby gem][] of Chai-Sinon that integrates it with the Rails asset pipeline!
 
 
 [Sinon.JS]: http://sinonjs.org/
